@@ -58,6 +58,8 @@ The subquery is then filtered for each club on the corresponding rank I have def
 Here are the following results for the club Alpha Rangers.
 ![image](https://github.com/user-attachments/assets/23c40afd-9670-4f75-bb2f-d51c67ab073f)
 
+So if we interpret those results, this means that the third highest rated Defender from Alpha Rangers has a overall rating of 79, which means te Dashboard will not recommend any defender lower rated than 79.
+
 The results will be then used to create the final table dim_opportunities
 
 

@@ -62,6 +62,52 @@ So if we interpret those results, this means that the third highest rated Defend
 
 The results will be then used to create the final table dim_opportunities
 
+# What is the point of dim_oportunities ?
+
+What is the point of dim_opportunities ?
+
+This table aims to display all the recommended player for each club, i.e. all players that meet the criteria previously described.
+
+Here are the criteria for Alpha Rangers for example.
+![image](https://github.com/user-attachments/assets/e4869e06-26a5-4611-9aa3-e01852222813)
+
+The concept of the query is to join the player's table with the standards table based on position_type, allowing the system to verify whether a player meets the club's standards for their specific position.
+A second join is done with dim_club, then the results are filtered only to keep recommendations that meet the standards and are within club's budgets.
+
+````sql
+WITH ClubStandards AS (
+    -- Getting for each club, their corresponding standard for each positions
+    SELECT 
+        club, 
+        id_club, 
+        position_type,
+        overall_rating AS niveau_standard
+    FROM datasetpotentialplayers.dim_standards
+)
+
+    SELECT
+        c.nom as recommendation_for,
+        dpt.string_field_1 AS for_position,
+        p.id_player as id_recommended_player,
+        p.nom as player_name,
+        cs.niveau_standard as standard_club,
+        p.potential as potential_player,
+        c.Budget_in_intergalatic_dollars as club_budget,
+        p.value_in_intergalactic_dollars as value_recommended_player,
+        cs.id_club as id_club_recommended
+    FROM datasetpotentialplayers.dim_players_characteristics p
+    LEFT JOIN `datasetpotentialplayers.dim_position_type` as dpt
+    ON p.position = dpt.string_field_0
+    JOIN ClubStandards cs ON dpt.string_field_1 = cs.position_type
+    JOIN datasetpotentialplayers.dim_clubs c ON cs.id_club = c.id_club
+    WHERE p.potential >= cs.niveau_standard  -- player's potential must fits with the club's standard
+    AND p.value_in_intergalactic_dollars <= c.Budget_in_intergalatic_dollars -- the player needs to fit with the budget
+````
+
+![image](https://github.com/user-attachments/assets/f69afbdb-670b-4b5e-ace8-2ef4f72788d0)
+
+Here we see that this player from Nova FC will be recommended to each clubs.
+
 
 
 

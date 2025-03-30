@@ -1,7 +1,6 @@
 # intergalacticfootballtalenfinder
-A Dashboard to help intergalactic clubs find the best talents for the
 ![image](https://github.com/user-attachments/assets/6835ef36-1d3b-4ff3-a1e1-ae014ae561a4)
-
+A Dashboard to help intergalactic clubs find the best talents for them
 
 ## Introduction
 

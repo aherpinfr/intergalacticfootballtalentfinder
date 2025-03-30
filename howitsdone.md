@@ -14,6 +14,7 @@ In order to display the best opportunities for a given club two view where then 
 
 All the recommendations are coming from dim_players_opportunities.
 ![image](https://github.com/user-attachments/assets/d5fb42b9-96aa-4647-a399-8d70f6fa42d0)
+
 Recommended players for Nova FC.
 
 # What is the point of dim_standards ?

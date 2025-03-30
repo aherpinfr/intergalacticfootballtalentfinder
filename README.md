@@ -1,21 +1,21 @@
-# footballplayersanalysis
-An analysis of football players' potential & ratings
+# intergalacticfootballtalenfinder
+A Dashboard to help intergalactic clubs find the best talents for the
+![image](https://github.com/user-attachments/assets/6835ef36-1d3b-4ff3-a1e1-ae014ae561a4)
 
-# Analyzing football players' characteristics
 
 ## Introduction
 
 ### Context of the project
 This project came to my mind because I used to play football management games, such as Football Manager, and I liked to consult the database to find the best players to buy when starting a new career.
 
-### Goals of the project
-This project aims to find the best players to buy for a given team when starting a career in a hypothetical Football Management game in 2019.
+### Goal of the project
+This project aimed to find the best players to buy for a given team when starting a career as a new manager in the football intergalactic league.
 
 ### Sample size 
-In total, I collected information on approximately 17,000 FIFA football players. The dataset was downloaded from Kaggle and meticulously scraped from SoFIFA.com by Masood Ahmed & Talha Turab (see Dataset : https://www.kaggle.com/datasets/maso0dahmed/football-players-data/data?status=pending&suggestionBundleId=694&selectedOnly=true).
+I created a database of 12 clubs and more than 280 players. Data creation was done by Perplexity's chatbot. 
 
 ### Tools 
-Data have been stored in BigQuery, then loaded and transformed with SQL & Power BI 
+Data have been stored in BigQuery, then loaded and transformed with SQL & Power BI. 
 
 ### Project Status
 The project is ongoing. There is no possibility yet to select a team and to suggest the best opportunities.

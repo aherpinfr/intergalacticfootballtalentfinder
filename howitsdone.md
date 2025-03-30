@@ -37,7 +37,7 @@ First, I defined the following standards :
 
 This then has been translated in the SQL instructions as below
 
-```
+```sql
 With Subquery AS (SELECT Club, id_club, id_player, overall_rating, dpt.string_field_1 as position_type,
 ROW_NUMBER() OVER(PARTITION BY club, dpt.string_field_1 order by overall_rating desc) as rank_overall
 from `datasetpotentialplayers.dim_players_characteristics` as dpc

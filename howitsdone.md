@@ -72,7 +72,7 @@ Here are the criteria for Alpha Rangers for example.
 ![image](https://github.com/user-attachments/assets/e4869e06-26a5-4611-9aa3-e01852222813)
 
 The concept of the query is to join the player's table with the standards table based on position_type, allowing the system to verify whether a player meets the club's standards for their specific position.
-A second join is done with dim_club, then the results are filtered only to keep recommendations that meet the standards and are within club's budgets.
+A second join is done with dim_club on the club_id corresponding from standard table and the club id from clubs table, then the results are filtered only to keep recommendations that meet the standards and are within club's budgets.
 
 ````sql
 WITH ClubStandards AS (
@@ -103,10 +103,9 @@ WITH ClubStandards AS (
     WHERE p.potential >= cs.niveau_standard  -- player's potential must fits with the club's standard
     AND p.value_in_intergalactic_dollars <= c.Budget_in_intergalatic_dollars -- the player needs to fit with the budget
 ````
+![image](https://github.com/user-attachments/assets/84e50928-bdac-42f8-862c-40c5f7ef81ba)
 
-![image](https://github.com/user-attachments/assets/f69afbdb-670b-4b5e-ace8-2ef4f72788d0)
-
-Here we see that this player from Nova FC will be recommended to each clubs.
+Here we see that this player from Nova FC will be recommended to the eighth richest clubs only.
 
 
 

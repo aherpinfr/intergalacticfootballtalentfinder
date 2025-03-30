@@ -27,7 +27,7 @@ Data have been stored in BigQuery, then loaded and transformed with SQL & Power 
 Project is done.
 
 ## [How it's done]()
-### Summary
+
 
   
 

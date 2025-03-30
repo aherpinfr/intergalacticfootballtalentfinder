@@ -27,7 +27,7 @@ Data have been stored in BigQuery, then loaded and transformed with SQL & Power 
 ### Project Status
 Project is done.
 
-## [How does it work]()
+## [How does it work](howitsdone.md)
 
 
   

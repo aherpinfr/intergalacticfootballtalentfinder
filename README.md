@@ -1,4 +1,4 @@
-# The club intergalactic talen finder
+# The club intergalactic talent finder
 ![image](https://github.com/user-attachments/assets/92757677-8cea-42df-b020-11addd358ad1)
 
 A Dashboard to help intergalactic clubs find the best talents for them

@@ -1,6 +1,7 @@
 # The club intergalactic talent finder
 ![image](https://github.com/user-attachments/assets/92757677-8cea-42df-b020-11addd358ad1)
-![image](https://github.com/user-attachments/assets/3cd13fa3-b5ad-456f-843f-141f31058c96)
+![image](https://github.com/user-attachments/assets/1c0a0afd-e2bc-4a70-8179-5c8013021555)
+
 A Dashboard to help intergalactic clubs find the best talents for them
 
 ## Introduction
@@ -26,7 +27,7 @@ Data have been stored in BigQuery, then loaded and transformed with SQL & Power 
 ### Project Status
 Project is done.
 
-## [How it's done]()
+## [How does it work]()
 
 
   

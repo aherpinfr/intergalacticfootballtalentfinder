@@ -1,6 +1,6 @@
 # The club intergalactic talent finder
 ![image](https://github.com/user-attachments/assets/92757677-8cea-42df-b020-11addd358ad1)
-
+![image](https://github.com/user-attachments/assets/3cd13fa3-b5ad-456f-843f-141f31058c96)
 A Dashboard to help intergalactic clubs find the best talents for them
 
 ## Introduction

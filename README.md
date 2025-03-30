@@ -26,15 +26,8 @@ Data have been stored in BigQuery, then loaded and transformed with SQL & Power 
 ### Project Status
 Project is done.
 
-### Limits
-
-## [Data Analysis]()
+## [How it's done]()
 ### Summary
 
-
-
-## Conclusion
-Traditional companies are huge compared to renewables.
-Still, renewables are still making a lot and as much as leading companies in other markets like retail and consulting services.
   
 

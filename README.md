@@ -1,5 +1,5 @@
 # footballplayersanalysis
-An analysis of football players' characteristics in 2019
+An analysis of football players' potential & ratings
 
 # Analyzing football players' characteristics
 
